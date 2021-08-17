@@ -1,3 +1,4 @@
+namespace opt {
 float fast_inv_sqrt(float x) {
   long i;
   float x2, y;
@@ -13,4 +14,6 @@ float fast_inv_sqrt(float x) {
   y = y * (threehalfs - (x2 * y * y));  // 3st iteration
 
   return y;
+}
+
 }
